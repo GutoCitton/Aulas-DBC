@@ -1,0 +1,29 @@
+.teste p:nth-child(1) {
+    background-color: aqua;
+}
+
+.teste p:nth-child(2) {
+    background-color: red;
+}
+
+nav ul li:last-child {
+    background-color: aqua;
+    margin-right: 0;
+}
+nav ul li {
+    margin-right: 80px;
+    display: inline;
+}
+
+nav ul li::before {
+    content: '';
+    display: inline-block;
+    background-image: url(/Img/download.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+p:not(.classico) {
+    color: red;
+}

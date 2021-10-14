@@ -1,77 +1,104 @@
 <html>
     <head>
         <title>HTML Form</title>
+        <link rel="stylesheet" href="Contact.css">
     </head>
 
-    <Header>
-        <img src="/Aula 2/img/cogumelo.jpeg"  width="50px">
-        <small>Melhor Vemser de todos os tempos</small>
 
-        <ul>
-            <li>
-                <a href="google.com">Home</a>
-            </li>
-            <li>
-                <a href="google.com">Sobre</a>
-            </li>
-            <li>
-                <a href="google.com">Contato</a>
-            </li>
-        </ul>
-
-    </Header>
 
     <body>
-        <form>
-            <label for="nome">Digite seu nome completo</label>
-            <input id="nome" type="text" name="nome" placeholder="Digite o Usuário" required>
-            <br>
-            <br>
-            <label for="email">Digite seu e-mail</label>
-            <input id="email" type="email" name="email" placeholder="Digite o E-mail" required>
-            <br>
-            <br>
 
+        <Header>
+            <div class="container">
+                <div class="alinhamento1">
+                    <img src="/Aula 2/img/cogumelo.jpeg"  width="50px" class="imghead">
+                    <p class="cogutxthead">Melhor Vemser de todos os tempos</p>
+        
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="Home.html" class="menu">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="menu">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="menu">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+            </div>
+    
+    
+        </Header>
+        <main>
+            <form>
+                <div class="container">
+                    <div class="formulario">
+                        <label class="label" for="nome">Digite seu nome completo</label>
+                        <input class="input" id="nome" type="text" name="nome" placeholder="Digite o Usuário" required>
+                        <br>
+                        <br>
+                        <label class="label" for="email">Digite seu e-mail</label>
+                        <input class="input" id="email" type="email" name="email" placeholder="Digite o E-mail" required>
+                        <br>
+                        <br>
             
-
-
-            <br><br>
-
-            <label for="question">Motivo do contato</label>
-            <select required name="question" id="question">
-                <option value="q1">HTML é easy demais</option>
-                <option value="q2">HTML é hard demais</option>
-                <option value="q3">Outros</option>
-            </select>
-
-            <br> <br>
-
-
-            <br> <br>
-
-           <p> Sua mensagem</p>
-            <textarea name="bio" id="bio" cols="40" rows="10"></textarea>
-
-            <br> <br>
-
-            <input type="submit" value="salvar">
-
-        </form>
+                        
+            
+            
+                        <br><br>
+            
+                        <label class="label" for="question">Motivo do contato</label>
+                        <select class="input" required name="question" id="question">
+                            <option value="q1">HTML é easy demais</option>
+                            <option value="q2">HTML é hard demais</option>
+                            <option value="q3">Outros</option>
+                        </select>
+            
+                        <br> <br>
+            
+            
+                        <br> <br>
+            
+                       <p> Sua mensagem</p>
+                        <textarea name="msg" id="msg" cols="65" rows="10"></textarea>
+            
+                        <br> <br>
+            
+                        <input class="input1" type="submit" value="salvar">
+    
+                    </div>
+    
+                </div>
+    
+            </form>
+    
+        </main>
 
         <footer>
-            <ul>
-                <li>
-                    <a href="google.com">Home</a>
-                </li>
-                <li>
-                    <a href="google.com">About</a>
-                </li>
-                <li>
-                    <a href="google.com">Contato</a>
-                </li>
-            </ul>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="Home.html" class="menu">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="menu">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="menu">Contato</a>
+                        </li>
+                    </ul>  
+    
+                </nav>
+            
+                <address>Av.Andaraí 531 - Porto Alegre</address>
         
-            <p><em>Av.Andaraí 531 - Porto Alegre</em></p>
+            </div>
     
         </footer>
     </body>
