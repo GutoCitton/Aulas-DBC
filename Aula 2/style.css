@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;    
+    }
+
+
+h1 {
+    color: red;
+    background-color: bisque;
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: blue;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+
+ul {
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: brown; */
+
+    /* border: 4px solid red; */
+
+    border-bottom: 4px solid red;
+    border-left: 8px solid blue;
+    border-top: 4px solid red;
+    border-right: 8pf solid blue;
+}
+
+li {
+    border-bottom: 1px solid red;
+    text-shadow: 2px 2px lightgray;
+    list-style-type: none;
+}
+
+.class1 {
+    background-color: aqua;
+    width: 300px;
+}
+
+.class2 {
+    /* background-color: blueviolet; */
+    width: 300px;
+}
+
+#id1 {
+    background-color: brown;
+}
+
+.exe {
+    background-color: aqua;
+    /* margin: 20px;
+    margin-left: 20px; */
+    /* margin: 10px 20px 5px 40px; Pensar que nem relógio, cima, direita, baixo e esquerda */
+    border: 4px solid red;
+    padding: 20px;
+    margin: 20px;
+}
