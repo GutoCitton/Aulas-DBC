@@ -70,6 +70,14 @@ body {
 .alinhamento1 {
     display: flex;
     align-items: center;
+    
+}
+
+.alinhamento2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 .imghead {
@@ -121,7 +129,7 @@ body {
     border-radius: 50px;  
     box-shadow: 3px 3px rgba(119, 119, 119, 0.5);
     width: 60px;
-    margin: 24px 32px 24px 32px;
+    margin: 75px 16px;
     /* display: inline; */
     
 }
