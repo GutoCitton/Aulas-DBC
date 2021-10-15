@@ -24,10 +24,57 @@ body {
     margin: auto;
 }
 
+.container2 {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
 /*----- CABEÇALHO ----- */
 
 header {
     background-color: #1A75C1;
+    padding-top: 16px;
+}
+
+
+
+header input[type=text] {
+    display: inline-flex;
+    border-radius: 20px;
+    padding: 10px 16px 0px 24px;
+    margin-left: 10px;
+    border: none;
+}
+
+header input[type=date] {
+    display: inline-flex;
+    border-radius: 20px;
+    padding: 10px 5px 0px 5px;
+    margin-left: 10px;
+    border: none;
+}
+
+#pesquisa::placeholder{
+    display: flex;
+    color: #A6A6A6;
+    font-size: 14px;
+    
+}
+
+/* header input[type=text]{
+
+    content: '';
+    display: inline-block;
+    background-image: url(/Img/Search.jpg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+} */
+
+header input[type=date]{
+    border-radius: 20px;
+
 }
 
 
@@ -50,15 +97,25 @@ h1 {
 }
 
 .card h3{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 12px;
 }
 
 .card {
-    width: 300px;
-    height: 350px;
+    justify-content: space-between;
+    width: 200px;
+    height: 250px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     background: #FFFFFF;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
 }
 
 small {
@@ -79,18 +136,50 @@ main a:last-child {
 
 /* ----- ANIVERSÁRIOS ----- */
 
+aside {
+    background-color: white;
+}
+
+aside h3:first-child {
+    color: #004E8F;
+    margin-left: 20px;
+}
+
+aside h4 {
+    color: #004E8F;
+    margin: 10px 0px 25px 20px;
+
+}
+
+
 .birthday-line{
     color: #004E8F;
-    
+    display: flex;
 }
 
-/* .birthday-line input[type=submit] {
-    background-color: aquamarine;
+.birthday-line img {
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+}
+
+
+.birthday-line input[type=submit] {
+    display: flex;
+    background-color: #1A75C1;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 50px 2px 50px;
+    margin: 20px;
 
 }
+
 .birthday-line input[type=text] {
-    background-color: blueviolet;
-} */
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #A6A6A6 ;
+}
 
 
 
