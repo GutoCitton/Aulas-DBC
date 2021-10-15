@@ -1,0 +1,112 @@
+/*----- FONTES ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ------  GERAL ----- */
+
+
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: roboto;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*----- CABEÇALHO ----- */
+
+header {
+    background-color: #1A75C1;
+}
+
+
+/* ----- NOTÍCIAS ----- */
+
+h1 {
+    color: #1A75C1;
+    font-family: poppins;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+ 
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+
+small {
+    color: #1A75C1;
+    font-size: 14px;
+}
+
+main a:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 124px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #847E7E;
+
+}
+
+/* ----- ANIVERSÁRIOS ----- */
+
+.birthday-line{
+    color: #004E8F;
+    
+}
+
+/* .birthday-line input[type=submit] {
+    background-color: aquamarine;
+
+}
+.birthday-line input[type=text] {
+    background-color: blueviolet;
+} */
+
+
+
+
+
+
+
+/*----- FOOTER ----- */
+
+footer {
+    background-color: #FFFFFF;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 50px;
+ }
