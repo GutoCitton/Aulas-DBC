@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            body, ul, li, *{
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li{
+                list-style: none;
+            }
+
+            header{
+                display: flex;
+                /* flex-direction: row-reverse;   */
+                /* organiza por linha */
+
+                /* flex-direction: column-reverse;   */
+                /* organiza por coluna */
+
+                /* flex-wrap: wrap;  */
+                /* quebra o ELEMENTO quando acaba a tela */
+
+                
+            }
+
+            main {
+                display: flex;
+
+
+                /* flex-wrap: wrap; */
+                /* flex-wrap: wrap-reverse; */
+                /* quebra a linha ao contrário */
+
+                /* flex-flow: row wrap; */
+                /* É uma fusão de flex direction e flax wrap */
+                
+                /* justify-content: end; */
+                /* alinha no final da pagina */
+
+                /* justify-content: center; */
+                /* centraliza os elementos na pagina */
+
+                /* justify-content: space-between; */
+                /* deixa um espaçamento igual em todos elementos, porém cola os elementos nas laterais */
+
+                /* justify-content: space-around; */
+                /* deixa um espaçamento igual em todos elementos, inclusive nas laterais */
+
+                /* justify-content: space-evenly; */
+                /* considera as bordas na hora do alinhamento */
+
+                align-items: stretch;
+                /* Alinhamento de um certo item dentro do bloco que o contém */
+
+            }
+
+            main > div { 
+                /* O sinal de maior indica que sera modificado apenas a div de dentro do elemento pai (main) */
+                width: 300px;
+                height: 300px;
+                /* border: 30px solid #000; */
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#">Logo</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                </ul>
+            </nav>
+            <span>teste</span>
+        </header>
+
+        <main>
+            <div style="background-color: pink;">1</div>
+            <div style="background-color: red;">2</div>
+            <div style="background-color: green;">3</div>
+            <div style="background-color: orange;">4</div>
+
+        </main>
+    </body>
+</html>

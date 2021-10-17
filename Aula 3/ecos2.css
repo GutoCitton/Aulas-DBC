@@ -1,0 +1,50 @@
+html, body, *, ul, li{
+    margin:0;
+    padding: 0;
+    }
+
+
+nav ul li{
+    display: inline;
+   
+    }
+
+nav li:nth-child(4) {
+    margin-left: 250px;
+    }
+
+ header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A75C1;
+    };
+
+main {
+    max-width: 60%;
+}
+
+.container  {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+} */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+
+aside {
+    display: flex;
+    max-width: 40%;
+}
+
+.row .card img {
+    width: 200;
+}

@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+
+
 /* ------  GERAL ----- */
 
 
@@ -30,11 +33,16 @@ body {
     margin: auto;
 }
 
+
+
+
 /*----- CABEÇALHO ----- */
 
 header {
+    display: flex;
     background-color: #1A75C1;
-    padding-top: 16px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 
@@ -72,10 +80,10 @@ header input[type=date] {
     background-size: contain;
 } */
 
-header input[type=date]{
-    border-radius: 20px;
 
-}
+
+
+
 
 
 /* ----- NOTÍCIAS ----- */
@@ -134,10 +142,19 @@ main a:last-child {
 
 }
 
+main {
+    max-width: 60%;
+}
+
+
+
+
+
 /* ----- ANIVERSÁRIOS ----- */
 
 aside {
     background-color: white;
+    max-width: 40%;
 }
 
 aside h3:first-child {
@@ -179,6 +196,15 @@ aside h4 {
     border-radius: 50px;
     border-style: solid;
     border-color: #A6A6A6 ;
+    padding: 5px 100px 5px 100px;
+    margin: 20px;
+}
+
+.anisario  {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 
