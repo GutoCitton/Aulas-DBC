@@ -152,12 +152,20 @@ img {
     
     /* border: 3px solid black; */
     width: 200px;
-    margin: -210px 0px 230px 200px;
+    margin: -214px 0px 230px 200px;
     flex-wrap: wrap;
 }
 
 
+.teste {
+    /* flex-direction: column; */
+    margin: 100px 50px 375px 50px;
+}
 
+p.teste{
+    margin-top: 140;
+    margin-left: 10px;
+}
 
 
 
