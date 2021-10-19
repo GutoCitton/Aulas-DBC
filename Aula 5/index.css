@@ -69,6 +69,29 @@ main {
     background-color: red;
 }
 
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 25px;
+}
+
+.row .card img{
+    width: 200px;
+    margin:10px;
+
+}
+
+.row small{
+    display: flex;
+    height: 20px;
+}
+
+
+
+
 aside {
     width: 40%;
     background-color: salmon;
@@ -106,6 +129,7 @@ button {
     
     
 }
+
 
 
 
