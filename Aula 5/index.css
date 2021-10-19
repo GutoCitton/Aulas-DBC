@@ -1,0 +1,115 @@
+header {
+    background-color: #1A75C1;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > div {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+header a.logo{
+    margin-right: 30px;
+}
+
+header input[type=text] {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    min-width: 300px;
+    outline-style: none;
+}
+
+header .search i {
+    color: #1A75C1;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+header .search i:hover{
+    color: rgb(25, 0, 255);
+}
+
+i {
+    color: red;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color:#1A75C1;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.container-home {
+    display: flex;
+}
+
+main {
+    width: 60%;
+    background-color: red;
+}
+
+aside {
+    width: 40%;
+    background-color: salmon;
+}
+
+.birthday {
+    display: flex;
+}
+
+aside > div {
+    margin: 50px 30px;
+}
+
+
+
+h4 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 23px;
+}
+button {
+    padding: 5px 30px;
+    margin: 30px 20px;
+}
+
+.birthday div > img {
+    border-radius: 50px;
+    width: 70px;
+}
+
+.birthday div > h4 {
+    display: inline-flex;
+    
+    
+}
+
+
+
+.birthday div:last-child {
+    max-width: 140px;
+}
+
