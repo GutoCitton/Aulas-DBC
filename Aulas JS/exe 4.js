@@ -10,7 +10,7 @@ var n2 = prompt("Digite outro número");
 var number1 = Number.parseInt(n1);
 var number2 = Number.parseInt(n2);
 
-if (number1.toString() != "NaN" && number2.toString() != "NaN" && typeof number1 === "number" && typeof number2 === "number"){
+if (number1.toString() !== "NaN" && number2.toString() !== "NaN" && typeof number1 === "number" && typeof number2 === "number"){
     var operation = prompt("Escolha uma das operações: soma, subtração, multiplicação e divisão");
         if (operation === "soma") {
             alert(number1 + number2);
@@ -22,7 +22,7 @@ if (number1.toString() != "NaN" && number2.toString() != "NaN" && typeof number1
             alert(number1 * number2);
         }
         else if (operation === "divisão" || operation === "divisao") {
-            if (number1 != 0 && number2 != 0) {
+            if (number2 != 0) {
                 alert(number1 / number2);
             } else {
                 alert("Não é possível dividir por zero");

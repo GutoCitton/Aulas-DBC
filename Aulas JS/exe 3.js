@@ -7,3 +7,29 @@
 //    null, undefined ou um texto vazio ('')
 
 
+var isFriday
+var isTwoGreaterThanFour = 2 > 4
+// var isValueEmpty
+
+var testeIsFriday = prompt("Hoje é sexta-feira? (sim ou não)")
+var isValueEmpty = prompt("Digita algo ai")
+
+
+if (testeIsFriday === "sim") {
+  isFriday = true  
+} else if (testeIsFriday === "não" || testeIsFriday === "nao") {
+  isFriday = false
+}
+
+
+if (isValueEmpty.toString() !== "null" && isValueEmpty.toString() !== "undefined" && isValueEmpty !== "") {
+    alert(`
+  Hoje é sexta-feira: ${isFriday}
+  2 é maior que 4: ${isTwoGreaterThanFour}
+  O valor digitado é valido: ${isValueEmpty}  
+`)
+} 
+else{ 
+    alert("O texto digitado não é aceito.")
+}
+

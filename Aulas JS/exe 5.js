@@ -12,7 +12,7 @@ var p1 = Number.parseFloat(prompt("Digite a nota da prova"));
 
 var mediaNotas = ((t1 + t2 + p1) / 3).toFixed(1);
 
-if (t1 != "NaN" && t2 != "NaN" && p1 != "NaN" && t1 + t2 + p1 <= 30) {
+if (t1.toString() !== "NaN" && t2.toString() !== "NaN" && p1.toString() !== "NaN" && t1 + t2 + p1 <= 30) {
     if (mediaNotas < 5) {
         alert(`Sua nota foi ${mediaNotas}`);
         alert("REPROVADO!");
