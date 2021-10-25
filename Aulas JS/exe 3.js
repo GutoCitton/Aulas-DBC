@@ -7,21 +7,3 @@
 //    null, undefined ou um texto vazio ('')
 
 
-
-var isFriday = 
-
-var isTwoGreaterThanFour = 
-
-var isValueEmpty = 
-
-
-var n1 = prompt("Digite um número");
-
-var n2 = prompt("Digite outro número");
-
-var numComparation1 = Number.parseInt(n1);
-
-var numComparation2 = Number.parseInt(n2);
-
-
-

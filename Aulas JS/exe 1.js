@@ -9,7 +9,7 @@ if (typeof text === "string" && text === "sim") {
     alert("Parabéns");
 }
 else if (typeof text === "string" && text === "não" || text === "nao") {
-    var alertTxt = prompt("Em uma escala de 0 - 10, como está seu humor hoje?");
+    var alertTxt = prompt("Defina seu humor com um número.");
     alert(`Seu nível de humor é ${alertTxt}`);
 } else{
     alert("Você tem noção de serus atos?");
