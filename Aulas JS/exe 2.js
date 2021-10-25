@@ -9,9 +9,9 @@ var atendentName = prompt("Qual o nome do atendente?");
 var teste1 = Number.parseInt(clientName);
 var teste2 = Number.parseInt(atendentName);
 
-if (teste1 === NaN && typeof teste2 === NaN) {
+if (teste1.toString() === 'NaN' && teste2.toString() === 'NaN') {
     alert(`Olá ${clientName}, me chamo ${atendentName}, no que posso ajudar?`)
 } else {
-    alert("Ta moscando fii? Vaza da minha loja!!!")
+    alert("Nome inválido")
 }
 
