@@ -7,17 +7,21 @@
 
 var salarioInicial = 1000;
 
-var year = 2016;
-
-var salarioAtualizado;
+var porCento = 1.5
 
 
-while (year <= 2021) {
+var salario = 1000;
 
-    if(year < 2018)
-    salarioAtt = salarioInicial+ (salarioInicial * (1.5 / 100));
-    console.log(salarioAtt)
-    year++
+
+for (let year = 2016; year <= 2021; year++) {
+    if (year < 2018){
+        salario = salario + (salario * (porCento / 100))
+        console.log(`O salário do ano ${year} é de R$${salario}`)
+    }
+    else if(year <= 2021) {
+        salario = salario + (salario * ((porCento *2) / 100))
+        console.log(`O salário do ano ${year} é de R$${salario}`)
+    }
 }
 
 
