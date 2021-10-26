@@ -17,10 +17,14 @@ for (let year = 2016; year <= 2021; year++) {
     if (year < 2018){
         salario = salario + (salario * (porCento / 100))
         console.log(`O salário do ano ${year} é de R$${salario}`)
+        porCento = porCento * 2
+        console.log(`A porcentagem de aumento é de: ${porCento}`)
     }
     else if(year <= 2021) {
-        salario = salario + (salario * ((porCento *2) / 100))
+        salario = salario + (salario * (porCento / 100))
         console.log(`O salário do ano ${year} é de R$${salario}`)
+        porCento = porCento * 2
+        console.log(`A porcentagem de aumento é de: ${porCento}`)
     }
 }
 

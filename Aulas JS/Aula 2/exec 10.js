@@ -4,12 +4,17 @@ var num = 0;
 var i = 1;
 var result = 0;
 
-while (i <= 5){
+do{
+    num = Number.parseInt(prompt(`Digite o ${i}º número da soma`));
 
-    num = parseInt(prompt(`Digite o ${i}º número da soma`));
-
-    result += num;
-
-    i++
+    if(num.toString() !== 'NaN'){
+        result += num;
+        i++
+    } else {
+        console.log("Não é um número")
     }
+    
+
+
+    } while(i <= 5);
     console.log(result);
