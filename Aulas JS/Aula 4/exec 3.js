@@ -8,8 +8,22 @@ var stringTest = "eu amo java script com espaço mesmo pra mostrar que funciona"
 
 
 function firstLetter(string) {
-  var myString = string.toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
-  return myString;
+    
+  var myString = string.split(' ')
+  
+  for (let i = 0; i < myString.length; i++) {
+    myString[i] = myString[i][0].toUpperCase() + myString[i].substr(1);
 }
-console.log(capitalizeFirst(stringTest)); 
- 
+
+  return console.log(myString.join(' '));
+}
+
+
+
+
+// function firstLetter(string) {
+//     var myString = string.toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+//     return myString;
+//   }
+//   console.log(capitalizeFirst(stringTest)); 
+   
