@@ -4,11 +4,11 @@
 
 
 function removerCaracter (caracter, array) {
-    var arrayCopy = [...array];
-    for (let i = 0; i <= arrayCopy.length; i++){
-        if(caracter === arrayCopy[i]) {
-            arrayCopy.splice(i, 1);
+    var arrayResultado = [];
+    for (let i = 0; i < array.length; i++){
+        if(caracter.toLowerCase() !== array[i].toLowerCase()) {
+            arrayResultado.push(array[i]);
         }
     }
-    return arrayCopy;
+    return arrayResultado;
 }

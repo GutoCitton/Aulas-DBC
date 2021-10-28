@@ -9,11 +9,11 @@ var stringTest = "eu amo java script com espaço mesmo pra mostrar que funciona"
 
 function firstLetter(string) {
     
-  var myString = string.split(' ')
+  var myString = string.split(' ');
   
   for (let i = 0; i < myString.length; i++) {
     myString[i] = myString[i][0].toUpperCase() + myString[i].substr(1);
-}
+  }
 
   return console.log(myString.join(' '));
 }
