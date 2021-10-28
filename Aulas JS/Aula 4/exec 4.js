@@ -4,13 +4,15 @@
 
 
 function countLetters (string) {
+    var consoantCompair = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'y', 'w', 'z', 'ç']
+    var vogalCompair = ['a', 'e', 'i', 'o', 'u']
     var testString = string.split('');
     var consoant = 0;
     var vogal = 0
     for (i = 0; i < testString.length; i++) {
-        if(testString[i] === 'a' || testString[i] === 'e' || testString[i] === 'i' || testString[i] === 'o' || testString[i] === 'u') {
+        if(vogalCompair.includes(testString[i].toLowerCase())) {
             vogal += 1;
-        } else if(testString[i] !== ' '){
+        } else if(consoantCompair.includes(testString[i].toLowerCase())) {
             consoant += 1;
         }
     }
@@ -19,3 +21,5 @@ function countLetters (string) {
 
 
 // index !== length
+
+
