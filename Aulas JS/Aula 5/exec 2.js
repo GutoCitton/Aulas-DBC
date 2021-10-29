@@ -9,7 +9,7 @@ var addAluno = (newAluno) => alunos.push(newAluno);
 addAluno ({nome:'guto', idade: 22})
 addAluno ({nome:'bruno', idade: 25})
 
-var buscaAluno = nomeDoAluno =>  alunos.find(findStudent => findStudent.nome === nomeDoAluno );
+var buscaAluno = NomeOuIdadeAluno =>  alunos.find(findStudent => findStudent.nome === NomeOuIdadeAluno || findStudent.idade === NomeOuIdadeAluno);
 
 console.log(buscaAluno)
 

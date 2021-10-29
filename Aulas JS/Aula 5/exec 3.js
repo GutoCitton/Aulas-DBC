@@ -36,6 +36,8 @@
 
 
 
+
+
 // 1) Cadastrar um produto;
 // - cuidado para não ter o mesmo id (identificador);
 
@@ -44,14 +46,14 @@ var IdAtual = 0;
 
 
 var addItem = (newItem) => {
-    var itemFinal = {
+    var itemAdicionado = {
         descricao: String(newItem.descricao),
         valor: Number(newItem.valor)
     };
-    if (itemFinal.descricao !== '' && itemFinal.descricao !== undefined && itemFinal.valor !== NaN && itemFinal.valor !== undefined && itemFinal.valor !== 0) {
-        itemFinal.id = IdAtual + 1;
-        IdAtual = itemFinal.id;
-        listaDeProdutos.push(itemFinal);
+    if (itemAdicionado.descricao !== '' && itemAdicionado.descricao !== 'undefined' && String(itemAdicionado.valor) !== 'NaN' && itemAdicionado.valor !== undefined && itemAdicionado.valor !== 0) {
+        itemAdicionado.id = IdAtual + 1;
+        IdAtual = itemAdicionado.id;
+        listaDeProdutos.push(itemAdicionado);
     } else {
         console.log('Item inválido');
     }
@@ -74,7 +76,6 @@ var deleteProductById = (Id) => {
 
 
 var findProductById = (Id) => listaDeProdutos.find((product) => product.id === Id);
-
 
 
 
