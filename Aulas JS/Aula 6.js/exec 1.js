@@ -6,7 +6,7 @@
 */
 
 
-class Animal {
+class Colaborador {
     nome = '';
     raca = '';
     idade = 0;
@@ -24,7 +24,7 @@ class Animal {
     }
 }
 
-const bunny = new Animal('Bunny', 'Poodle', 6, 'Cachorro');
+const claudio = new Colaborador('Cláudio', 55412, 22, 8);
 const pacoca = new Animal('Paçoca', 'Vira Lata', 9, 'Cachorro');
 const theo = new Animal('Theo', 'Poodle', 2, 'Cachorro');
 const mitsy = new Animal('Mitsy', 'Siames', 5, 'Gato');

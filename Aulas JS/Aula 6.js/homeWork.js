@@ -70,7 +70,7 @@
     pontoHora = 0;
 
     constructor(nameParameter, idParameter, dayPointParameter, HourPointParameter) {
-        this.nome = nameParameter;
+        this.nome = isPresent(nameParameter) ? nome : this.nome;
         this.id = idParameter;
         this.pontoDia = dayPointParameter;
         this.pontoHora = HourPointParameter;
@@ -79,9 +79,40 @@
     pointMarker() {
         console.log(`Hoje é dia ${this.pontoDia}, horas trbalhadas: ${this.pontoHora}h.`);
     }
+
+    infoColaborador() {
+        console.log(`Nome: ${this.nome}\nID: ${this.id}`)
+    }
 }
 
     const claudio = new Colaborador('Cláudio', 55412, 22, 8);
 
     claudio.pointMarker()
+    claudio.infoColaborador()
+
+
+
+//                                      2 - Cadastrar Projeto;
+
+
+// Conseguir adicionar mais um nome nos colaboradores
+class Projeto{
+    codigo = 0;
+    titulo = '';
+    colaboradoresAlocados = '';
+    
+    constructor(projectCode, projectTitle, projectColaborators) {
+        this.codigo = projectCode;
+        this.titulo = projectTitle;
+        this.colaboradoresAlocados = projectColaborators;
+        
+    }
+
+    infoProjeto() {
+        console.log(`Nome do projeto: ${this.titulo}\nCódigo do projeto: ${this.codigo}\nEnvolvidos no projeto: ${this.colaboradoresAlocados} `)
+    }
+
+}
+
+
 
