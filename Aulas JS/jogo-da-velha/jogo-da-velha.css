@@ -1,0 +1,59 @@
+table td {
+    border-right : 5px solid red;
+    border-bottom : 5px solid red;
+    padding: 73px;
+    width: 175px;
+    height: 175px;
+
+}
+
+table td:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+
+table td:last-child {
+    border-right : transparent;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+table tr:nth-child(3) > td{
+    border-bottom: transparent;
+}
+
+.estr-jg-vlh {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.restartBtn {
+    display: flex;
+    margin: 75px 0;
+    justify-content: center;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.vencedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    min-height: 50px;
+}
+
+

@@ -62,19 +62,22 @@
     //                                      1 - Cadastrar Colaborador;
 
 
+    var arrayColaboradores = [];
        
     class Colaborador {
+        
     nome = '';
     id = 0;
     pontoDia = 0;
     pontoHora = 0;
 
     constructor(nameParameter, idParameter, dayPointParameter, HourPointParameter) {
-        this.nome = isPresent(nameParameter) ? nome : this.nome;
+        this.nome = nameParameter;
         this.id = idParameter;
         this.pontoDia = dayPointParameter;
         this.pontoHora = HourPointParameter;
     }
+
 
     pointMarker() {
         console.log(`Hoje é dia ${this.pontoDia}, horas trbalhadas: ${this.pontoHora}h.`);
@@ -86,9 +89,17 @@
 }
 
     const claudio = new Colaborador('Cláudio', 55412, 22, 8);
+    const bruno = new Colaborador('Bruno', 66578, 24, 6);
 
     claudio.pointMarker()
     claudio.infoColaborador()
+
+
+    function cadastrarColaborador(nome) {
+        arrayColaboradores.push(nome)
+   }
+
+
 
 
 
@@ -96,10 +107,13 @@
 
 
 // Conseguir adicionar mais um nome nos colaboradores
+
+
+
 class Projeto{
     codigo = 0;
     titulo = '';
-    colaboradoresAlocados = '';
+    colaboradoresAlocados = [];
     
     constructor(projectCode, projectTitle, projectColaborators) {
         this.codigo = projectCode;
@@ -113,6 +127,5 @@ class Projeto{
     }
 
 }
-
 
 
